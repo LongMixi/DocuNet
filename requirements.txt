@@ -1,0 +1,8 @@
+# Python >=3.11
+torch>=2.0.1
+torchvision>=0.15.2  # nếu có dùng vision
+transformers>=4.40.0
+opt-einsum>=3.3.0
+ujson>=5.8.0
+tqdm>=4.65.0
+allennlp>=2.10.0
