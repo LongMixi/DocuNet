@@ -162,6 +162,8 @@ def main():
     parser.add_argument("--max_height", type=int, default=42)
 
     args = parser.parse_args()
+    if not hasattr(args, "n_gpu"):
+        args.n_gpu = torch.cuda.device_count()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     args.device = device
     args.n_gpu = torch.cuda.device_count()
